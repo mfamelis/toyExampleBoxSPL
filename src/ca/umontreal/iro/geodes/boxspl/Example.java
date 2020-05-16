@@ -104,7 +104,7 @@ public class Example {
 		System.out.println("-------------------------");
 
 		// So let's build the z3 string!
-		String z3 = "; You can verify that this is UNSAT at https://rise4fun.com/Z3 \n";
+		String z3 = "; You can verify that this happens to be UNSAT at https://rise4fun.com/Z3 \n";
 
 		// first the declare-fun for the boolean variables
 		for (String v : featureVariables)
