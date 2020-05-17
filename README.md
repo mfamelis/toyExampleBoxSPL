@@ -11,7 +11,7 @@ The language used for propositional expressions is [SMT-LIB](http://smtlib.cs.ui
 
 The example consists of three files:
   * spl.csv: the "CSV file" mentioned above
-  * Box.java: a POJO implementation of the Box metamodel
+  * Box.java: a [POJO](https://en.wikipedia.org/wiki/Plain_old_Java_object) implementation of the Box metamodel
   * Example.java: the actual example. Read the inline comments to see what is happening.
   
 Comments and suggestions are welcome at famelis@iro.umontreal.ca.
