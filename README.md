@@ -9,9 +9,14 @@ In this little example, the feature model and the feature mapping are encoded as
 
 The language used for propositional expressions is [SMT-LIB](http://smtlib.cs.uiowa.edu/language.shtml), which is the langauge used as input by the [Z3 solver](https://github.com/Z3Prover/z3). You can learn more about Z3 and how to use it on [Rise4Fun](https://rise4fun.com/z3/tutorial).
 
-The example consists of three files:
+The example consists of four files:
   * spl.csv: the "CSV file" mentioned above
-  * Box.java: a [POJO](https://en.wikipedia.org/wiki/Plain_old_Java_object) implementation of the Box metamodel
+  * BoxModel.java: a [POJO](https://en.wikipedia.org/wiki/Plain_old_Java_object) implementation of a simple metamodel: A BoxModel can contain Box objects, each of which can contain other Box objects. 
+  * Box.java: a POJO implementation of the Box metaclass.
   * Example.java: the actual example. Read the inline comments to see what is happening.
   
+![metamodel](https://yuml.me/diagram/boring/class/[BoxModel]<>boxes-[Box|id:String]<>contents-[Box])
+
 Comments and suggestions are welcome at famelis@iro.umontreal.ca.
+
+

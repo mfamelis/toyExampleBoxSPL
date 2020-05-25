@@ -46,14 +46,14 @@ public class Example {
 	public static void main(String[] args) throws FileNotFoundException {
 
 		// Define the domain model as a bunch of boxes
-		Box domainModel = new Box("top");
+		BoxModel domainModel = new BoxModel();
 		Box a = new Box("a");
 		Box b = new Box("b");
 		Box c = new Box("c");
 		domainModel.addBox(a);
 		domainModel.addBox(b);
 		domainModel.addBox(c);
-		System.out.println(domainModel);
+		System.out.println("The model has these elements: "+domainModel.getBoxes());
 
 		// declare a List to store all the variable declarations
 		ArrayList<String> featureVariables = new ArrayList<>();
@@ -124,8 +124,8 @@ public class Example {
 
 	}
 
-	private static Box findBox(String name, Box topLevelBox) {
-		List<Box> knownBoxes = topLevelBox.getBoxes();
+	private static Box findBox(String name, BoxModel boxModel) {
+		List<Box> knownBoxes = boxModel.getBoxes();
 		for (Box b : knownBoxes)
 			if (b.toString().trim().equals(name))
 				return b;

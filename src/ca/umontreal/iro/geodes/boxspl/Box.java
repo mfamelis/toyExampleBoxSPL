@@ -4,9 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * A POJO metamodel of a universe of boxes. A box has an identifier (it's up to
- * you to make sure it is unique), and keeps track of a list of other boxes that
- * it contains.
+ * A POJO metaclass for boxes. A Box has an identifier (it's up to you to make
+ * sure it is unique), and can contain other boxes.
  * 
  * @author Michalis Famelis
  *
