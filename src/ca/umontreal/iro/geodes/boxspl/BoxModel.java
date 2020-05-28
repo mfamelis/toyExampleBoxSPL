@@ -8,7 +8,7 @@ import java.util.List;
  * <a href="http://yuml.me/preview/27938e54">on yUML</a>.
  * </p>
  * <img src=
- * "https://yuml.me/diagram/boring/class/[BoxModel]<>boxes-[Box|id:String]<>contents-[Box]"/>
+ * "https://yuml.me/diagram/boring/class/[BoxModel]<>model-boxes>[Box|id:String]<>contents-[Box]"/>
  * 
  * @author Michalis Famelis
  *
