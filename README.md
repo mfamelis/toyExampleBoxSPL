@@ -15,7 +15,7 @@ The example consists of four files:
   * [spl.csv](https://github.com/mfamelis/toyExampleBoxSPL/blob/master/spl.csv): the "CSV file" mentioned above. It defines two features f1 and f2 and a feature model that simply requires at least one of the two features to exist in a product. Then it defines a product line by assigning presence conditions to elements of a BoxModel instance that happens to have three boxes (a,b,c). The resulting product line happens to be unsatisfiable: there is no way to create a satisfiable combination of the three boxes that respects the feature model and the presence conditions.
   * [Example.java](https://github.com/mfamelis/toyExampleBoxSPL/blob/master/src/ca/umontreal/iro/geodes/boxspl/Example.java): the actual example. Read the inline comments to see what is happening.
   
-![metamodel](https://yuml.me/diagram/boring/class/[BoxModel]<>boxes-[Box|id:String]<>contents-[Box])
+![metamodel](https://yuml.me/diagram/boring/class/[BoxModel]<>model-boxes>[Box|id:String]<>contents-[Box])
 
 Comments and suggestions are welcome at famelis@iro.umontreal.ca.
 
